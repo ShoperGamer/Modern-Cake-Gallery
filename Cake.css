@@ -1,0 +1,31 @@
+ .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        #cake {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .theme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+/* Dark Mode Styles */
+[data-bs-theme="dark"] .navbar {
+    background-color: #000000 !important; /* ใช้สีดำสนิทสำหรับ Navbar ในโหมดมืด */
+}
+
+[data-bs-theme="dark"] h1 {
+    color: #ffffff !important; /* เปลี่ยนสีหัวข้อหลักเป็นสีขาว */
+}
+
+[data-bs-theme="dark"] .lead {
+    color: #f8f9fa !important; /* เปลี่ยนสีข้อความเป็นสีขาวสว่าง */
+}
